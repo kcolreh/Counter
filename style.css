@@ -1,0 +1,49 @@
+html{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgba(0, 0, 0, 0.782);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 100px;
+    margin-bottom: 15px;
+}
+
+#counter-display{
+    font-size: 75px;
+    margin-bottom: 15px;
+
+}
+
+.btn{
+    font-size: 25px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.648);
+}
+
+#increase{
+    background-color: rgba(116, 255, 116, 0.177);
+}
+
+#decrease{
+    background-color: rgba(255, 81, 0, 0.177);
+}
