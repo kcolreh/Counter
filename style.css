@@ -37,8 +37,24 @@ h1 {
   background: transparent;
   box-shadow: 1px 2px 2px black;
   border-radius: 5px;
+  padding: 5px;
   color: rgba(0, 0, 0, 0.648);
 }
+
+#increase:active{
+  color: rgba(0, 0, 0, 1);
+  font-size: 26px;
+}
+
+#decrease:active{
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+}
+
+#reset:active{
+  color: rgba(0, 0, 0, 1);
+}
+
 
 #increase {
   background-color: rgba(116, 255, 116, 0.177);
@@ -46,11 +62,4 @@ h1 {
 
 #decrease {
   background-color: rgba(255, 81, 0, 0.177);
-}
-
-.secret-msg {
-  font-size: 50px;
-  padding: 0;
-  margin: 0;
-  overflow: auto;
 }

@@ -9,30 +9,21 @@ let counter = 0;
 buttonUp.addEventListener('click', () => {
     counter++;
     displayNumber.textContent = counter;
-    console.log(counter)
-    if (counter === 1000) {
-        setInterval(() => {
-            secretMsg.textContent = 'CONGRATULATIONS YOU WON!';
-            secretMsg.style.color = generateRandomColor()
-        }, 150);
+    if (counter > 0) {
+        displayNumber.style.color = 'rgba(116, 255, 116, 0.60)'
     }
 })
 
 buttonDown.addEventListener('click', () => {
     counter--;
     displayNumber.textContent = counter;
+    if (counter < 0) {
+        displayNumber.style.color = 'rgba(255, 81, 0, 0.60)'
+    }
 })
 
 buttonReset.addEventListener('click', () => {
     counter = 0;
     displayNumber.textContent = counter;
+    displayNumber.style.color = 'rgba(0, 0, 0, 0.648)';
 })
-
-
-function generateRandomColor() {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    backgroundColorText = 'RGB background(' + r + ',' + g + ',' + b + ')';
-    return backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-}
